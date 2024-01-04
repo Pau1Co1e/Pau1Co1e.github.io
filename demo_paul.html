@@ -11,42 +11,51 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
         .container {
             max-width: 800px;
             margin: auto;
             background: white;
             padding: 20px;
         }
+
         .header {
             text-align: center;
             background: #333;
             color: white;
             padding: 10px 0;
         }
+
         .header h1 {
             margin: 0;
         }
+
         .section {
             margin-bottom: 20px;
         }
+
         .section h2 {
             background: #333;
             color: white;
             padding: 5px;
             margin: 0;
         }
+
         .section-content {
             padding: 15px;
             background: #f8f8f8;
         }
+
         .section-content p {
             margin: 0;
         }
+
         .skill-container {
             width: 100%;
             background-color: #ddd;
             margin: 10px 0;
         }
+
         .skill {
             text-align: right;
             padding-top: 3px;
@@ -55,6 +64,50 @@
             background-color: #4CAF50;
             width: 0%;
         }
+
+        /* Updated toggle button styles */
+        .toggle-button {
+            background-color: transparent;
+            border: none;
+            text-align: left;
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .toggle-button:hover {
+            background-color: #f0f0f0;
+        }
+
+        .toggle-button::after {
+            content: '\25BC'; /* Unicode for down arrow */
+            position: absolute;
+            right: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle-button.show::after {
+            transform: rotate(180deg); /* Flips the arrow when active */
+        }
+
+        /* Description paragraph styles */
+        .description {
+            max-height: 0;
+            overflow: hidden;
+            padding: 0 10px;
+            background-color: #f8f8f8;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+
+        /* Style when description is shown */
+        .description.show {
+            max-height: 500px; /* Adjust as needed */
+            padding: 10px;
+        }
+
     </style>
 </head>
 <body>
@@ -67,22 +120,51 @@
         <div class="section">
             <h2>Professional Summary</h2>
             <div class="section-content">
-                <p>Aspiring MS Computer Science student with a passion for Machine Learning, AI, Robotics, and Game Development.</p>
+                <p>Currently advancing through a Master of Science program in Computer Science, I am deeply engaged in exploring and developing innovative solutions in Machine Learning, AI, and Robotics My academic journey is complemented by practical experience, including a leadership role in a robotics project at Utah Valley University and a Full Stack Developer position at ResNexus. My goal is to leverage my academic knowledge and hands-on experience in a dynamic professional setting, where I can contribute to cutting-edge technological advancements.</p>
             </div>
         </div>
         <div class="section">
             <h2>Professional Experience</h2>
             <div class="section-content">
-                <p><strong>Full Stack Software Developer</strong> at ResNexus</p>
-                <p><strong>Software Engineer Intern</strong> at Utah Valley University</p>
-                <p><strong>Teaching Assistant</strong> at Utah Valley University</p>
+                <ul>
+                    <li>
+                        <button class="toggle-button" onclick="toggleDescription('desc1', this)"><strong>Full Stack Software Developer at ResNexus</strong></button>
+                        <p id="desc1" class="description">Developed, tested, deployed, and maintained software solutions such as working with databases using SQL, MYSQL, C#, .NET, .ASP.NET,  JSON, XML, and unit testing.
+                        Contributed to various full-stack development projects, enhancing the company's existing software products.
+                        Proposed automation solutions to tasks that were being performed manually. 
+                        Integrated 3rd party API’s into our product.
+                        </p>
+                    </li>
+                    <li>
+                        <button class="toggle-button" onclick="toggleDescription('desc2', this)"><strong>Software Engineer Intership</strong></button>
+                        <p id="desc2" class="description">Tasked with the planning, development, and testing of software architectures, ML models, autonomous functionality, and natural language processing on two humanoid robots. Already having tremendous interest in the field of ML and AI, I took leadership of the project at the beginning and through our communication and teamwork, we were able to problem solve the complexities of the project and meet our deadlines.
+                        Robots utilize computer vision alongside the training data of over 200 guests, including Utah Senator Mike Lee, and company founder Scott M. Smith of Qualtrics.  
+                        Robots and myself are featured in UVU’s promotional film.
+                        Attended a gala fundraiser presented by UVU where my robots greeted guests, bowed, shook hands and talked with them.
+                        </p>
+                    </li>
+                    <li>
+                        <button class="toggle-button" onclick="toggleDescription('desc3')"><strong>Teaching Assistantat Utah Valley University</strong></button>
+                        <p id="desc3" class="description">Supported and assisted the professors of two Junior level CS courses, Python Software Development and C++ Software Development. 
+                            Selected the C++ standard library that would be used by the students for that semester. 
+                            Taught some students how to use Git and Linux shell for version control and scripting of their programs. 
+                            Responsible for grading; I frequently helped student’s adhere to a set of standardized coding practices via one-on-one’s and course announcements.
+                             As a teaching assistant for C++ and Python,  I graded student submissions and provided tutoring for some students. 
+                        </p>
+                    </li>
+
+
+                </ul>
             </div>
         </div>
         <div class="section">
             <h2>Education</h2>
             <div class="section-content">
-                <p><strong>Master of Science</strong> in Computer Science, Utah Valley University</p>
-                <p><strong>Bachelor of Science</strong> in Computer Science, Utah Valley University</p>
+                <p><strong>Master of Science</strong><em> - Computer Science, Utah Valley University May 2025</em></p>
+                <p><strong>Bachelor of Science</strong><em> - Computer Science, Utah Valley University August 2022</em></p>
+                <p><strong>Associate of Science</strong><em> - Computer Science, Utah Valley University August 2022</em></p>
+                <p><strong>Programmer Certification</strong><em> - Computer Science, Utah Valley University August 2022</em></p>
+
             </div>
         </div>
 
@@ -91,9 +173,35 @@
             <div class="skill" style="width: 0%;" id="skillPython">Python</div>
         </div>
         <div class="skill-container">
+            <div class="skill" style="width: 0%;" id="skillC#">C#</div>
+        </div>
+        <div class="skill-container">
+            <div class="skill" style="width: 0%;" id="skill.NET">.NET</div>
+        </div>
+        <div class="skill-container">
             <div class="skill" style="width: 0%;" id="skillJavaScript">JavaScript</div>
         </div>
-
+        <div class="skill-container">
+            <div class="skill" style="width: 0%;" id="skillHTML">HTML</div>
+        </div>
+        <div class="skill-container">
+            <div class="skill" style="width: 0%;" id="skillCSS">CSS</div>
+        </div>
+        <div class="skill-container">
+            <div class="skill" style="width: 0%;" id="skillJava">Java</div>
+        </div>
+        <div class="skill-container">
+            <div class="skill" style="width: 0%;" id="skillSQL">SQL</div>
+        </div>
+        <div class="skill-container">
+            <div class="skill" style="width: 0%;" id="skillC++">C++</div>
+        </div>
+        <div class="skill-container">
+            <div class="skill" style="width: 0%;" id="skillMl">Machine Learning</div>
+        </div>
+        <div class="skill-container">
+            <div class="skill" style="width: 0%;" id="skillAI">Artificial Intelligence</div>
+        </div>
         <div class="section">
             <h2>Key Skills</h2>
             <div class="section-content">
@@ -103,47 +211,59 @@
     </div>
     <button id="downloadButton">Download Resume</button>
     <script>
-        // Start the animation when the document is loaded
-        document.addEventListener('DOMContentLoaded', animateSkills);
-        // JavaScript to handle downloading the resume
-        document.getElementById('downloadButton').addEventListener('click', function() {
+    document.addEventListener('DOMContentLoaded', animateSkills);
+
+    document.getElementById('downloadButton').addEventListener('click', function() {
         window.open('resume.txt', '_blank');
-        });
+    });
         // Function to animate skill bars
         function animateSkills() {
         const skills = [
             {id: 'skillPython', level: '95%'}, 
-            {id: 'skillHtml', level: '90%'},
-            {id: 'skillCss', level: '90%'},
+            {id: 'skillC#', level: '90%'},
+            {id: 'skill.NET', level: '90%'},
+            {id: 'skillHTML', level: '90%'},
+            {id: 'skillCSS', level: '90%'},
             {id: 'skillJavaScript', level: '75%'},
             {id: 'skillJava', level: '80%'},
-            {id: 'skillSql', level: '85%'},
-            {id: 'C++', level: '80%'},
-            // Add more skills here
+            {id: 'skillSQL', level: '85%'},
+            {id: 'skillC++', level: '80%'},
+            {id: 'skillMl', level: '65%'},
+            {id: 'skillAI', level: '85%'}
         ];
         
         skills.forEach(skill => {
             const skillElement = document.getElementById(skill.id);
-            skillElement.animate([
-                // Keyframes
+            let animation = skillElement.animate([
                 { width: '0%' },
                 { width: skill.level }
             ], {
-                // Timing options
                 duration: 2000,
                 fill: 'forwards'
             });
+
+        animation.onfinish = function() {
+                skillElement.textContent = skillElement.id.slice(5) + ' (' + skill.level + ')';
+            };
         });
     }
+    
         // JavaScript to expand sections
         function toggleSection(sectionId) {
-            var section = document.getElementById(sectionId);
-            if(section.style.display === "none") {
-                section.style.display = "block";
-            } else {
-                section.style.display = "none";
-            }
+        var section = document.getElementById(sectionId);
+        if (section.style.display === "none") {
+            section.style.display = "block";
+        } else {
+            section.style.display = "none";
         }
+    }
+
+        function toggleDescription(id, button) {
+        var description = document.getElementById(id);
+        description.classList.toggle('show');
+        button.classList.toggle('show');
+        button.setAttribute('aria-expanded', button.classList.contains('show'));
+    }
     </script>
 </body>
 </html>
