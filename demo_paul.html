@@ -42,9 +42,23 @@
         .section-content p {
             margin: 0;
         }
+        .skill-container {
+            width: 100%;
+            background-color: #ddd;
+            margin: 10px 0;
+        }
+        .skill {
+            text-align: right;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            color: white;
+            background-color: #4CAF50;
+            width: 0%;
+        }
     </style>
 </head>
 <body>
+    <div id="resume">
     <div class="container">
         <div class="header">
             <h1>Paul Coleman</h1>
@@ -71,6 +85,15 @@
                 <p><strong>Bachelor of Science</strong> in Computer Science, Utah Valley University</p>
             </div>
         </div>
+
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <div class="skill" style="width: 0%;" id="skillPython">Python</div>
+        </div>
+        <div class="skill-container">
+            <div class="skill" style="width: 0%;" id="skillJavaScript">JavaScript</div>
+        </div>
+
         <div class="section">
             <h2>Key Skills</h2>
             <div class="section-content">
@@ -80,11 +103,35 @@
     </div>
     <button id="downloadButton">Download Resume</button>
     <script>
+        // Start the animation when the document is loaded
+        document.addEventListener('DOMContentLoaded', animateSkills);
         // JavaScript to handle downloading the resume
         document.getElementById('downloadButton').addEventListener('click', function() {
-            // This could be a link to a PDF file of your resume
-            window.open('resume.txt', '_blank');
+        window.open('resume.txt', '_blank');
         });
+        // Function to animate skill bars
+        function animateSkills() {
+        const skills = [
+            {id: 'skillPython', level: '90%'}, 
+            {id: 'skillJavaScript', level: '75%'},
+            // Add more skills here
+        ];
+        
+        skills.forEach(skill => {
+            const skillElement = document.getElementById(skill.id);
+            skillElement.animate([
+                // Keyframes
+                { width: '0%' },
+                { width: skill.level }
+            ], {
+                // Timing options
+                duration: 2000,
+                fill: 'forwards'
+            });
+        });
+    }
+
+
 
         // JavaScript to expand sections
         function toggleSection(sectionId) {
