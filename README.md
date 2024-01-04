@@ -1,5 +1,5 @@
 # Pau1Co1e.github.io
-# Paul Coleman's Resume Website
+# Paul's Resume Website
 
 ## Overview
 This project is a personal resume website designed to showcase my web development skills and professional experience. The website features a clean, responsive design and interactive elements to engage potential employers and highlight my capabilities in web development.
