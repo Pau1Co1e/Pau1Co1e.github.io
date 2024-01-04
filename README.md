@@ -18,7 +18,7 @@ This project is a personal resume website designed to showcase my web developmen
 ## Setup and Usage
 To view the website:
 1. Clone the repository to your local machine using `[git clone [repository-url]](https://github.com/Pau1Co1e/Pau1Co1e.github.io.git)`.
-2. Open the `demo_paul.html` file in a web browser.
+2. Open the `index.html` file in a web browser.
 
 ## Contributions
 As this is a personal resume project, contributions are not currently being accepted. However, feedback and suggestions are always welcome.
