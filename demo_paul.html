@@ -13,10 +13,10 @@
         }
 
         .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
+        max-width: 95%;
+        margin: auto;
+        background: white;
+        padding: 20px;
         }
 
         .header {
@@ -57,12 +57,12 @@
         }
 
         .skill {
-            text-align: right;
             padding-top: 3px;
             padding-bottom: 3px;
             color: white;
             background-color: #4CAF50;
             width: 0%;
+            text-align: left;
         }
 
         /* Updated toggle button styles */
@@ -93,7 +93,6 @@
             transform: rotate(180deg); /* Flips the arrow when active */
         }
 
-        /* Description paragraph styles */
         .description {
             max-height: 0;
             overflow: hidden;
@@ -102,10 +101,71 @@
             transition: max-height 0.3s ease, padding 0.3s ease;
         }
 
-        /* Style when description is shown */
         .description.show {
-            max-height: 500px; /* Adjust as needed */
+            max-height: 500px;
             padding: 10px;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .footer p, .footer button {
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer a {
+            color: #4CAF50; /* Adjust the color as needed */
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .downloadButton {
+            align-content:baseline;
+        }
+    
+        #downloadButton {
+            background-color: #4CAF50; /* Button background color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #downloadButton:hover {
+            background-color: #367c39; /* Darker shade for hover effect */
+        }
+
+        @media screen and (max-width: 768px) {
+            .header h1, .toggle-button {
+                font-size: 14px;
+            }
+            .toggle-button::after {
+                right: 10px;
+            }
+            .skill {
+                font-size: 12px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .header h1, .toggle-button {
+                font-size: 12px;
+            }
+            .toggle-button::after {
+                right: 5px;
+            }
         }
 
     </style>
@@ -208,8 +268,11 @@
                 <p>Python, Full Stack Web Development, Machine Learning, AI, Leadership, and many more.</p>
             </div>
         </div>
+    <footer class="footer">
+        <p>Email: <a href="mailto:shrifty88@gmail.com">shrifty88@gmail.com</a></p>
+        <p><button id="downloadButton">Download Resume</button></p>
+    </footer>
     </div>
-    <button id="downloadButton">Download Resume</button>
     <script>
     document.addEventListener('DOMContentLoaded', animateSkills);
 
@@ -265,5 +328,6 @@
         button.setAttribute('aria-expanded', button.classList.contains('show'));
     }
     </script>
+
 </body>
 </html>
