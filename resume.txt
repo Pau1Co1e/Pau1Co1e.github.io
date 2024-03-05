@@ -1,110 +1,46 @@
-Paul Coleman
-Computer Scientist
-Software Engineer
-Provo, UT
-shrifty88@gmail.com
-Currently advancing through a Master of Science program in Computer Science, I am
-deeply engaged in exploring and developing innovative solutions in Machine Learning,
-AI, and Robotics My academic journey is complemented by practical experience,
-including a leadership role in a robotics project at Utah Valley University and a Full
-Stack Developer position at ResNexus. My goal is to leverage my academic knowledge
-and hands-on experience in a dynamic professional setting, where I can contribute to
-cutting-edge technological advancements.
-Professional Experience
-Full Stack Software Developer
-ResNexus | August 2023 - December 2023
-● Developed, tested, deployed, and maintained software solutions such as working
-with databases using SQL, MYSQL, C#, .NET, .ASP.NET, JSON, XML, and unit
-testing.
-● Contributed to various full-stack development projects, enhancing the company's
-existing software products.
-● Proposed automation solutions to tasks that were being performed manually.
-● Integrated 3rd party API’s into our product.
-Software Engineer Internship
-Utah Valley University | June 2021 - January 2022
-Tasked with the planning, development, and testing of software architectures, ML
-models, autonomous functionality, and natural language processing on two humanoid
-robots. Already having tremendous interest in the field of ML and AI, I took leadership
-of the project at the beginning and through our communication and teamwork, we were
-able to problem solve the complexities of the project and meet our deadlines.
-● Robots utilize computer vision alongside the training data of over 200 guests,
-including Utah Senator Mike Lee, and company founder Scott M. Smith of
-Qualtrics.
-● Robots and myself are featured in UVU’s promotional film.
-● Attended a gala fundraiser presented by UVU where my robots greeted guests,
-bowed, shook hands and talked with them.
-Teaching Assistant
-Utah Valley University | January 2021 - December 2021
-● Supported and assisted the professors of two Junior level CS courses, Python
-Software Development and C++ Software Development.
-● Selected the C++ standard library that would be used by the students for that
-semester.
-● Taught some students how to use Git and Linux shell for version control and
-scripting of their programs.
-● Responsible for grading; I frequently helped student’s adhere to a set of
-standardized coding practices via one-on-one’s and course announcements.
-● As a teaching assistant for C++ and Python, I graded student submissions and
-provided tutoring for some students.
-Software Developer
-Personal Projects | August 2018 - January 2023
-● Java - Compiler, ByteCode Assembler, Virtual Machine, and Parser.
-● C - Developed my own C library of data structures.
-● C++ - Teacher Aid for C++ Software Development and created a memory pool
-that allows for constant execution time.
-● C# - Scaled down, but fully functional virtual Operating System using C# and
-.NET.
-● Python – Anti-spam / Anti-phishing AI model, Embedded Systems, Computer
-Vision, Machine Learning. Created Web API for a stock market prediction
-application.
-● Web Development – Form Generator using HTML / HTML5, CSS, JavaScript,
-MySQL, AJAX that creates a letter of recommendation.
-● Game Development - Custom games (2D and 3D) that use the Unity platform.
-● Networking – TCP, IP, UDP, sockets.
-Education
-Master of Science | Computer Science | Utah Valley University | January 2023 - May
-2025
-Bachelor of Science | Computer Science | Utah Valley University | August 2018 - August
-2022
-Associate of Science | Computer Science | Utah Valley University | 2018 - 2021
-Key Skills
-● Python (Programming Language)
-● Full Stack Web Development
-● Scrum
-● Agile Process
-● Model Training
-● Computer Vision
-● Embedded Software Programming
-● Machine Learning (ML)
-● Leadership
-● Computer Architecture
-● Artificial Intelligence (AI)
-● Java
-● C++
-● C
-● C#
-● JavaScript
-● MySQL
-● AWS
-● API's
-● UI/UX Design
-● Node.js
-● Git
-● GitHub
-● Shell Scripting
-● Linux
-● Unix
-● Windows
-● .NET
-● ASP.NET
-● .NET MVC
-● Queries and query optimization.
-● HTML5 / CSS
-● TCP/IP
-● Computer Networking
-● Docker
-● Web Development
-● Compiler Construction
-● Communication
-● Teamwork
-● Organization Skills
-● Social Intelligence
+**Paul Coleman**  
+*IT Specialist | Computer Scientist | Software Engineer*  
+153 S 500 W, Provo, Utah 84601  
+shrifty88@gmail.com | 801-200-4591  
+LinkedIn: www.linkedin.com/in/paul-coleman88  
+Personal Webpage: https://pau1co1e.github.io
+GitHub Projects: https://github.com/Pau1Co1e?tab=repositories
+
+**Professional Summary:**  
+Versatile Software Engineer and IT Specialist with a strong foundation in computer science, focusing on applying Artificial Intelligence and Machine Learning to network and cyber security, system administration, data analysis, and cloud computing. Proven track record in developing and managing AI models and development of Machine Learning algorithms used for IT solutions, optimizing system performance, and ensuring data security and integrity. Eager to leverage my skills in an IT or Software Engineering role to enhance system reliability and efficiency.
+
+**Professional Experience:**
+
+**Full Stack Software Engineer**  
+ResNexus, Salem, Utah | September 2023 - December 2024 
+- Spearheaded the development and integration of automated solutions to enhance developer productivity and data integrity.
+- Developed custom API's and 3rd party API integrations.
+- Designed, developed, and tested software for a variety of purposes such as bug fixes, existing software changes/modifications, and the development of new content and features for our hospitality and reservation software.
+
+**Software Engineer Intern**  
+Utah Valley University, Orem, Utah | January 2021 - December 2021  
+- Managed and maintained the university's advanced humanoid roboics, ensuring optimal performance and reliability.  
+- Implemented network security measures, including firewalls and encryption, to safeguard sensitive information.  
+- Assisted in the deployment of a campus-wide wireless network upgrade, enhancing connectivity and user experince with the robots.
+- Used machine learning and artificial intelligence to develop autonomous systems funcionality, object and facial recognition, natural language processing, and improved upon the robotics fine motor skills and coordination. 
+
+**Software Developer (Personal Projects)** | August 2018 - January 2023  
+- Developed a custom library of data structures in C/C++, optimizing system performance for various applications.  
+- Created a web API for a stock market prediction application leveraging ML algorithms and demonstrating proficiency in web development and database management.  
+- Designed and implemented a form generator using HTML5, CSS, JavaScript, and MySQL, streamlining document processing tasks for university professors.
+- Developed deepfake and anti-phising software with high accuracy using advanced machine learning models.
+
+**Education:**  
+Master of Science in Computer Science | Utah Valley University | January 2023 – May 2025  
+Bachelor of Science in Computer Science | Utah Valley University | August 2018 - August 2022  
+Associate of Science in Computer Science | Utah Valley University | August 2018 – May 2021
+Certificatation - Programmer | Utah Valley University | August 2018 - August 2020
+
+**Key Skills:**  
+- Networking: TCP/IP, UDP, Network Security, Firewall Management  
+- Systems Administration: Windows, Linux, Unix, Shell Scripting, Docker  
+- Cloud Computing: AWS, Cloud Security, Cloud Infrastructure Management  
+- Programming: Python, Java, C++, C#, JavaScript  
+- Database Management: MySQL, Data Analysis, API Development  
+- Project Management: Agile Methodologies, Software Leadership, Team Leadership, Effective Communication, Architecture and Design
+- AI & ML: Model Development, Algorithm Design, Accuracy Improvements, Deepfake Detection, Anti-Spam/Phising, Computer Vision, Natural Language Processing
