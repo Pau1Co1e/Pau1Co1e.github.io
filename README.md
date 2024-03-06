@@ -21,7 +21,7 @@ View website via GitHub Pages (recommended): Go to https://pau1co1e.github.io/
 ### OR 
 
 To view the website:
-1. Clone the repository to your local machine using `[git clone [repository-url]](https://github.com/Pau1Co1e/Pau1Co1e.github.io.git)`.
+1. Clone the repository to your local machine using `[git clone [repository-url]](https://github.com/Pau1Co1e/Pau1Co1e.github.io.index.html)`.
 2. Open the `index.html` file in a web browser.
 
 ## Contributions
